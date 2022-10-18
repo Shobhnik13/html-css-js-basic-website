@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    margin-top:10px;
+    margin-left: 10px;
+width:60px;
+height:60px;
+border: 0px solid white;
+border-radius: 30px;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+}
+.nav-list{
+width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-list li{
+list-style: none;
+}
+.nav-list li a{
+text-decoration:none;
+color: white;
+font-size: 20px;
+}
+.nav-list li a:hover{
+    color: lightgrey;   
+    }    
+.rightnav{
+    width: 50%;
+    text-align: right;
+}
+#search{
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 40%;
+}
+.btn{
+font-size: 18px;
+margin-right: 20px;
+padding: 3px;
+background: none;
+color: white;
+border: 1px solid white;
+padding: 10px;
+border-radius: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:lightgrey;
+    color: black;
+    border: 1px solid black;
+}
+.background{
+    background:rgba(0, 0, 0,0.7)url('images/bg1.jpg')center center no-repeat;
+    background-blend-mode:darken;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width: 50%;
+margin: auto;
+height: 65%;
+}
+.firsthalf{
+    display: flex;
+    flex-direction: column;
+}
+.bigtext{
+    margin-top: 100px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.smalltext{
+    padding: 18px 0px;
+}
+.secondhalf img{
+    width: 300px;
+    height: 250px;
+    border-radius: 70px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.firstsection{
+    height: 100vh;
+}
+.mainbtn{
+    margin: 3px 2px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: none;
+    color: white;
+}
+.mainbtn:hover{
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+.section{
+display:flex;
+height: 400px;
+align-items: center;
+justify-content: space-evenly;
+max-width: 80%;/*it will use width of 80%*/
+margin: auto;
+
+}
+.section img{
+    height: 300px;
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.sectionbigtext{
+    font-weight: bolder;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+.secleft{
+    flex-direction: row-reverse;
+}
+.imgleft{
+    border: 1px solid black;
+    margin-right: 40px;
+}
+.contact{
+    background-color: #f6f5f4;
+    height: 600px;
+}
+.heading{
+    padding-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+}
+.form{
+    padding-top: 20px;
+    max-width: 800px;/*it will use 300px of its 100%*/
+    margin: auto;
+}
+.form input,textarea{
+    width: 100%;
+    margin: 15px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.btn1{
+    width: 30%;
+    font-size: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 23px;
+    padding: 5px;
+    background: none;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.burger{
+    /* display: none; */
+position: absolute;
+cursor: pointer;
+top: 20px;
+right: 10px;
+display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+    /* margin: auto; */
+margin-left: 160px;
+}
+/* responsive  */
+@media only screen and (max-width:1000px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-list li{
+        padding: 20px;
+    }
+    .navbar{
+        flex-direction: column;
+     padding-left: 300px;   
+        transform: all 0.3s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 150px;
+        margin: bottom 10px; ;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height:70px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
