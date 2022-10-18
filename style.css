@@ -115,7 +115,6 @@ height: 65%;
 }
 .section{
 display:flex;
-height: 400px;
 align-items: center;
 justify-content: space-evenly;
 max-width: 80%;/*it will use width of 80%*/
@@ -206,7 +205,8 @@ margin-left: 160px;
     .navbar{
         flex-direction: column;
      padding-left: 300px;   
-        transform: all 0.3s ease-out;
+     height: 420px;
+        transform: all 0.2s ease-out;
     }
     .rightnav{
         text-align: center;
@@ -224,4 +224,18 @@ margin-left: 160px;
     .v-class{
         opacity: 0;
     }
+.main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+}
+.section{
+    flex-direction: column-reverse;
+}
+.section img{
+    margin-top: 20px;
+}
+.secondhalf img{
+    padding-top: 50px;
+    margin-top:px;
+}
 }
